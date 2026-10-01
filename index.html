@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rekishii Lucy — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Rekishii Lucy — Informatics student at President University and Software Developer with background in Software Engineering from SMK Telesandi.">
+  <meta name="author" content="Rekishii Lucy">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="nav-brand">Rekishii Lucy</a>
+
+      <div class="nav-right">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
+          <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experience</a></li>
+          <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="#education" class="nav-link" data-i18n="nav.education">Education</a></li>
+          <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+
+        <div class="lang-switcher" role="group" aria-label="Language Switcher">
+          <button type="button" class="lang-btn active" data-lang="en">EN</button>
+          <button type="button" class="lang-btn" data-lang="id">ID</button>
+        </div>
+
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-section" id="about">
+      <div class="hero-layout">
+        <div class="hero-bio">
+          <h1 class="hero-name" data-i18n="hero.name">Rekishii Lucy</h1>
+          <p class="hero-subtitle" data-i18n="hero.role">
+            Informatics Student at President University & Software Developer
+          </p>
+          <p class="hero-desc" data-i18n="hero.bio">
+            Informatics student at President University with a background in Software Engineering from SMK Telekomunikasi Telesandi. I enjoy building software projects, working with databases and backend systems, and learning about emerging technologies, especially in software development and AI.
+          </p>
+
+          <div class="hero-links">
+            <a href="https://github.com/rekis-0103" target="_blank" rel="noopener noreferrer" class="hero-link-item">
+              <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/rekishii-lucy-760920307/" target="_blank" rel="noopener noreferrer" class="hero-link-item">
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="mailto:rekishii.lucy@student.president.ac.id" class="hero-link-item">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>rekishii.lucy@student.president.ac.id</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-avatar-wrap">
+          <img src="assets/profil.jpg" alt="Rekishii Lucy" class="hero-avatar">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <h2 class="section-heading" data-i18n="sec.experience">Experience</h2>
+
+      <div class="experience-list">
+        <div class="experience-item">
+          <div class="exp-header">
+            <div class="exp-role-company">
+              <span data-i18n="exp.role">IT Division — Intern</span>
+              <span style="color: var(--text-muted);">·</span>
+              <span class="exp-company" data-i18n="exp.company">PT. Waindo Specterra</span>
+            </div>
+            <span class="exp-date" data-i18n="exp.date">2025</span>
+          </div>
+
+          <ul class="exp-bullets">
+            <li data-i18n="exp.b1">Developed an integrated e-recruitment and company profile website during my internship at PT Waindo Specterra.</li>
+            <li data-i18n="exp.b2">Built end-to-end features including job vacancy management, online job applications, interview scheduling, and applicant status management.</li>
+            <li data-i18n="exp.b3">Collaborated directly with the IT team and internal users to translate requirements into reliable web modules.</li>
+          </ul>
+
+          <div class="tech-pills" style="margin-top: 8px;">
+            <span class="tech-pill">PHP</span>
+            <span class="tech-pill">MySQL</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">HTML & CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="section-heading" data-i18n="sec.projects">Projects</h2>
+
+      <div class="projects-stack">
+        <article class="project-entry">
+          <div class="project-entry-top">
+            <h3 class="project-entry-name" data-i18n="p1.name">Company Profile & E-Recruitment System</h3>
+            <span class="project-tag-origin" data-i18n="p1.tag">Internship • 2025</span>
+          </div>
+          <p class="project-entry-desc" data-i18n="p1.desc">
+            Developed an e-recruitment and company profile website during my internship at PT Waindo Specterra. The project included a company profile, job vacancy management, job applications, interview scheduling, and applicant status management.
+          </p>
+          <div class="project-entry-meta">
+            <div class="tech-pills">
+              <span class="tech-pill">PHP</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">CSS</span>
+            </div>
+            <a href="https://github.com/rekis-0103/compro-dan-jurnal" target="_blank" rel="noopener noreferrer" class="project-link-clean">
+              <span>GitHub</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-entry">
+          <div class="project-entry-top">
+            <h3 class="project-entry-name" data-i18n="p2.name">Web-Based Food Ordering System</h3>
+            <span class="project-tag-origin" data-i18n="p2.tag">SMK Telesandi Project</span>
+          </div>
+          <p class="project-entry-desc" data-i18n="p2.desc">
+            Developed a web-based food ordering system as a school project with a focus on managing food menus, customer orders, and the ordering process. Worked on the system's features and interface as part of a project-based development process.
+          </p>
+          <div class="project-entry-meta">
+            <div class="tech-pills">
+              <span class="tech-pill">PHP</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">CSS</span>
+            </div>
+            <a href="https://github.com/rekis-0103/Website-Restoran" target="_blank" rel="noopener noreferrer" class="project-link-clean">
+              <span>GitHub</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-entry">
+          <div class="project-entry-top">
+            <h3 class="project-entry-name" data-i18n="p3.name">Desktop Food Ordering System (Restoran Desktop)</h3>
+            <span class="project-tag-origin" data-i18n="p3.tag">SMK Telesandi Project</span>
+          </div>
+          <p class="project-entry-desc" data-i18n="p3.desc">
+            Desktop food ordering and cashier management application built with Visual Basic .NET and SQL Server as part of the semester 1 school project curriculum.
+          </p>
+          <div class="project-entry-meta">
+            <div class="tech-pills">
+              <span class="tech-pill">Visual Basic .NET</span>
+              <span class="tech-pill">SQL Server</span>
+            </div>
+            <a href="https://github.com/rekis-0103/restoran-desktop" target="_blank" rel="noopener noreferrer" class="project-link-clean">
+              <span>GitHub</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2 class="section-heading" data-i18n="sec.education">Education</h2>
+
+      <div class="education-list">
+        <div class="edu-entry">
+          <div class="edu-logo-wrap">
+            <img src="assets/logo_universitas-presiden.webp" alt="President University Logo" class="edu-logo">
+          </div>
+          <div class="edu-content">
+            <div class="edu-head">
+              <h3 class="edu-school-name" data-i18n="edu.pu_name">President University</h3>
+              <span class="edu-year" data-i18n="edu.pu_year">2026 – Present</span>
+            </div>
+            <div class="edu-degree" data-i18n="edu.pu_degree">Bachelor of Science in Informatics</div>
+            <p class="edu-detail" data-i18n="edu.pu_desc">
+              Currently pursuing undergraduate studies in Informatics with an emphasis on software engineering, algorithms, and artificial intelligence.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-entry">
+          <div class="edu-logo-wrap">
+            <img src="assets/Logo_SMK_Telekomunikasi_Telesandi_Bekasi.png" alt="SMK Telekomunikasi Telesandi Logo" class="edu-logo">
+          </div>
+          <div class="edu-content">
+            <div class="edu-head">
+              <h3 class="edu-school-name" data-i18n="edu.smk_name">SMK Telekomunikasi Telesandi</h3>
+              <span class="edu-year" data-i18n="edu.smk_year">2023 – 2026</span>
+            </div>
+            <div class="edu-degree" data-i18n="edu.smk_degree">Software Engineering (Rekayasa Perangkat Lunak)</div>
+            <p class="edu-detail" data-i18n="edu.smk_desc">
+              Completed vocational education in Software Engineering with rigorous training in web development (PHP, JS), databases (MySQL, SQL Server), desktop software (VB.Net, Java), and team project development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="section-heading" data-i18n="sec.skills">Skills</h2>
+
+      <div class="skills-block">
+        <div class="skill-row">
+          <span class="skill-row-label" data-i18n="skills.languages">Languages</span>
+          <span class="skill-row-items">PHP, JavaScript, Visual Basic .NET, Java (Basic OOP), Go (Basic), Python (Basic), HTML5, CSS3</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-row-label" data-i18n="skills.web">Web & Frameworks</span>
+          <span class="skill-row-items">Laravel 12, React.js, Blade, Responsive Web Design</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-row-label" data-i18n="skills.db">Databases & Tools</span>
+          <span class="skill-row-items">MySQL, SQL Server, Git, GitHub, Linux / Bash (Basic), VS Code</span>
+        </div>
+        <div class="skill-row">
+          <span class="skill-row-label" data-i18n="skills.soft">Soft Skills</span>
+          <span class="skill-row-items" data-i18n="skills.soft_val">Problem Solving, Teamwork, Attention to Detail</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2 class="section-heading" data-i18n="sec.contact">Get in Touch</h2>
+
+      <div class="contact-grid">
+        <div class="contact-card-item">
+          <div class="contact-card-left">
+            <span class="contact-channel" data-i18n="contact.email_label">Student Email</span>
+            <span class="contact-val">rekishii.lucy@student.president.ac.id</span>
+          </div>
+          <button type="button" class="copy-btn" data-copy="rekishii.lucy@student.president.ac.id" data-i18n="contact.copy">Copy</button>
+        </div>
+
+        <div class="contact-card-item">
+          <div class="contact-card-left">
+            <span class="contact-channel" data-i18n="contact.phone_label">WhatsApp / Phone</span>
+            <span class="contact-val">+62-852-8311-5453</span>
+          </div>
+          <button type="button" class="copy-btn" data-copy="+6285283115453" data-i18n="contact.copy">Copy</button>
+        </div>
+
+        <div class="contact-card-item">
+          <div class="contact-card-left">
+            <span class="contact-channel" data-i18n="contact.github_label">GitHub</span>
+            <span class="contact-val">github.com/rekis-0103</span>
+          </div>
+          <a href="https://github.com/rekis-0103" target="_blank" rel="noopener noreferrer" class="copy-btn">Open ↗</a>
+        </div>
+
+        <div class="contact-card-item">
+          <div class="contact-card-left">
+            <span class="contact-channel" data-i18n="contact.linkedin_label">LinkedIn</span>
+            <span class="contact-val">linkedin.com/in/rekishii-lucy</span>
+          </div>
+          <a href="https://www.linkedin.com/in/rekishii-lucy-760920307/" target="_blank" rel="noopener noreferrer" class="copy-btn">Open ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span data-i18n="footer.text">© 2026 Rekishii Lucy. Built with HTML, CSS & JavaScript.</span>
+      <a href="#" data-i18n="footer.top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <div class="toast-msg" id="toastNotice" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
